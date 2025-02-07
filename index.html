@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica bloque 3</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function mostrarMensaje() {
+            var nombre = document.getElementById("nombre").value;
+            var apellido = document.getElementById("apellido").value;
+            alert('Bienvenido ' + nombre + " " + apellido)
+        }
+    </script>
+</head>
+<body>
+    <h1>Práctica bloque 3</h1>
+    <form>
+        <label for="nombre">Introduce nombre</label>
+        <input type="text" id="nombre" name="nombre">
+        <label for="apellido">Introduce apellido</label>
+        <input type="text" id="apellido" name="apellido" onchange="mostrarMensaje()">
+    </form>
+</body>
+</html>
